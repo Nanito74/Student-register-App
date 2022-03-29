@@ -1,0 +1,47 @@
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>DNI</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Operations</th>
+        </tr>
+    </thead>
+
+
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{id_student}}</td>
+            <td>{{name}}</td>
+            <td>{{surname}}</td>
+            <td>{{dni}}</td>
+            <td>{{address}} {{address_n}}</td>
+            <td>{{email}}</td>
+            <td>{{phone}}</td>
+            <td>
+                <a href="/student/{{id_student}}">Delete</a>
+                <a href="/editstudent/{{id_student}}">Update</a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+<form action="/student/" method="POST">
+    <input type="text" name="name" placeholder="name">
+    <input type="text" name="surname" placeholder="surname">
+    <input type="text" name="dni" placeholder="dni">
+    <input type="text" name="address" placeholder="address">
+    <input type="text" name="address_n" placeholder="N address">
+    <input type="text" name="email" placeholder="email">
+    <input type="text" name="phone" placeholder="phone">
+
+    <button>Add</button>
+
+
+</form>

@@ -1,0 +1,26 @@
+@api = http://localhost:3000/student
+
+###
+GET {{api}}
+
+###
+POST {{api}}
+Content-Type: application/json 
+
+{
+    "name": "Pedrin",
+    "surname": "Sanchez",
+    "dni": "15039823",
+    "phone": "3414532345"
+}
+
+###
+GET {{api}}/1
+
+###
+PUT {{api}}/1
+
+
+
+###
+DELETE  {{api}}/14

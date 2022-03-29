@@ -1,0 +1,31 @@
+{
+  "name": "student-register",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.3",
+    "morgan": "^1.10.0",
+    "mssql": "^8.0.2",
+    "multer": "^1.4.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "alert": "^5.0.10",
+    "node-popup": "^0.1.14",
+    "nodemon": "^2.0.15",
+    "popups": "^1.1.3"
+  }
+}
